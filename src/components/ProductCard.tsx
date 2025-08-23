@@ -18,27 +18,26 @@ const ProductCard = ({ model, storage, price, condition }: ProductCardProps) => 
   };
 
   return (
-    <Card className="bg-gradient-card shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden group">
+    <Card className="bg-white shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden group border border-gray-100">
       <div className="p-6">
-        <div className="flex justify-between items-start mb-4">
+        <div className="flex justify-between items-start mb-6">
           <Badge 
-            variant={condition === "brand-new" ? "default" : "secondary"}
-            className={condition === "brand-new" ? "bg-gradient-primary" : "bg-brand-gray text-white"}
+            className={condition === "brand-new" ? "bg-brand-orange text-white rounded-full px-3 py-1" : "bg-blue-500 text-white rounded-full px-3 py-1"}
           >
             {condition === "brand-new" ? "BRAND NEW" : "PRE-OWNED"}
           </Badge>
-          <div className="p-2 bg-brand-orange/10 rounded-full">
-            <Smartphone className="h-6 w-6 text-brand-orange" />
+          <div className="p-2 bg-brand-orange/10 rounded border border-brand-orange/20">
+            <Smartphone className="h-4 w-4 text-brand-orange" />
           </div>
         </div>
         
-        <h3 className="text-xl font-bold text-brand-dark mb-2 group-hover:text-brand-orange transition-colors">
+        <h3 className="text-2xl font-bold text-gray-900 mb-2">
           {model}
         </h3>
         
-        <div className="flex items-center gap-2 mb-4 text-brand-gray">
+        <div className="flex items-center gap-2 mb-6 text-gray-500">
           <HardDrive className="h-4 w-4" />
-          <span className="text-sm">{storage}</span>
+          <span className="text-sm font-medium">{storage}</span>
         </div>
         
         <div className="flex justify-between items-center">
@@ -50,7 +49,7 @@ const ProductCard = ({ model, storage, price, condition }: ProductCardProps) => 
           
           <Button 
             onClick={handleWhatsAppOrder}
-            className="bg-gradient-primary hover:shadow-hover transition-all duration-300"
+            className="bg-brand-orange hover:bg-brand-orange/90 text-white px-6 py-2 rounded-lg transition-all duration-300"
           >
             <MessageCircle className="h-4 w-4 mr-2" />
             Order Now
