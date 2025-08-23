@@ -18,13 +18,13 @@ const ProductCard = ({ model, storage, price, condition, image }: ProductCardPro
   };
 
   return (
-    <Card className="bg-white shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden group border border-gray-100">
+    <Card className="bg-white shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-gray-100 w-full max-w-xs mx-auto">
       {image && (
-        <div className="h-48 overflow-hidden">
+        <div className="h-64 overflow-hidden flex items-center justify-center">
           <img 
             src={image} 
             alt={`${model} ${storage}`}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            className="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-105"
           />
         </div>
       )}
