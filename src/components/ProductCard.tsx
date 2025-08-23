@@ -11,7 +11,7 @@ interface ProductCardProps {
   image?: string;
 }
 
-const ProductCard = ({ model, storage, price, condition }: ProductCardProps) => {
+const ProductCard = ({ model, storage, price, condition, image }: ProductCardProps) => {
   const handleWhatsAppOrder = () => {
     const message = `Hi! I'm interested in the ${condition === "brand-new" ? "Brand New" : "Pre-owned"} ${model} ${storage} for R${price.toLocaleString()}`;
     window.open(`https://wa.me/27717273856?text=${encodeURIComponent(message)}`, "_blank");
@@ -19,6 +19,15 @@ const ProductCard = ({ model, storage, price, condition }: ProductCardProps) => 
 
   return (
     <Card className="bg-white shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden group border border-gray-100">
+      {image && (
+        <div className="h-48 overflow-hidden">
+          <img 
+            src={image} 
+            alt={`${model} ${storage}`}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+      )}
       <div className="p-6">
         <div className="flex justify-between items-start mb-6">
           <Badge 
