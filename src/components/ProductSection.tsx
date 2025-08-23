@@ -37,33 +37,35 @@ const ProductSection = () => {
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="brand-new">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {brandNewProducts.map((product) => (
-                <ProductCard
-                  key={product.id}
-                  model={product.model}
-                  storage={product.storage}
-                  price={product.price}
-                  condition={product.condition}
-                />
-              ))}
-            </div>
-          </TabsContent>
+           <TabsContent value="brand-new">
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+               {brandNewProducts.map((product) => (
+                 <ProductCard
+                   key={product.id}
+                   model={product.model}
+                   storage={product.storage}
+                   price={product.price}
+                   condition={product.condition}
+                   image={product.image}
+                 />
+               ))}
+             </div>
+           </TabsContent>
 
-          <TabsContent value="pre-owned">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {preOwnedProducts.map((product) => (
-                <ProductCard
-                  key={product.id}
-                  model={product.model}
-                  storage={product.storage}
-                  price={product.price}
-                  condition={product.condition}
-                />
-              ))}
-            </div>
-          </TabsContent>
+           <TabsContent value="pre-owned">
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+               {preOwnedProducts.map((product) => (
+                 <ProductCard
+                   key={product.id}
+                   model={product.model}
+                   storage={product.storage}
+                   price={product.price}
+                   condition={product.condition}
+                   image={product.image}
+                 />
+               ))}
+             </div>
+           </TabsContent>
         </Tabs>
       </div>
     </section>

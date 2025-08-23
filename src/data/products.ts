@@ -4,10 +4,11 @@ export interface Product {
   storage: string;
   price: number;
   condition: "brand-new" | "pre-owned";
+  image?: string;
 }
 
 export const brandNewProducts: Product[] = [
-  { id: "1", model: "iPhone 7", storage: "32GB", price: 2800, condition: "brand-new" },
+  { id: "1", model: "iPhone 7", storage: "32GB", price: 2800, condition: "brand-new", image: "/lovable-uploads/39e97a94-2071-432b-bf0a-e446a5bd1a9b.png" },
   { id: "2", model: "iPhone 7 Plus", storage: "32GB", price: 3500, condition: "brand-new" },
   { id: "3", model: "iPhone 7 Plus", storage: "128GB", price: 3900, condition: "brand-new" },
   { id: "4", model: "iPhone 8", storage: "64GB", price: 3300, condition: "brand-new" },
@@ -33,7 +34,7 @@ export const brandNewProducts: Product[] = [
 ];
 
 export const preOwnedProducts: Product[] = [
-  { id: "24", model: "iPhone 7", storage: "32GB", price: 2400, condition: "pre-owned" },
+  { id: "24", model: "iPhone 7", storage: "32GB", price: 2400, condition: "pre-owned", image: "/lovable-uploads/39e97a94-2071-432b-bf0a-e446a5bd1a9b.png" },
   { id: "25", model: "iPhone 7 Plus", storage: "32GB", price: 3000, condition: "pre-owned" },
   { id: "26", model: "iPhone 7 Plus", storage: "128GB", price: 3400, condition: "pre-owned" },
   { id: "27", model: "iPhone 8", storage: "64GB", price: 2900, condition: "pre-owned" },
