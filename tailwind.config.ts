@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				brand: {
+					orange: 'hsl(var(--brand-orange))',
+					dark: 'hsl(var(--brand-dark))',
+					light: 'hsl(var(--brand-light))',
+					gray: 'hsl(var(--brand-gray))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +68,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)'
+			},
+			boxShadow: {
+				'card': 'var(--shadow-card)',
+				'hover': 'var(--shadow-hover)',
+				'elegant': 'var(--shadow-elegant)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
