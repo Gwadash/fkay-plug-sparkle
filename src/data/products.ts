@@ -39,7 +39,7 @@ export const preOwnedProducts: Product[] = [
   { id: "26", model: "iPhone 7 Plus", storage: "128GB", price: 3400, condition: "pre-owned", image: "/lovable-uploads/d60a3aa9-9ae0-4b1e-b65d-760bf33c7740.png" },
   { id: "27", model: "iPhone 8", storage: "64GB", price: 2900, condition: "pre-owned", image: "/lovable-uploads/7e05145c-8840-4b0d-abdf-2e4896ee92df.png" },
   { id: "28", model: "iPhone 8 Plus", storage: "64GB", price: 3500, condition: "pre-owned", image: "/lovable-uploads/8b205e3d-8a67-4959-8213-d0106a2040c9.png" },
-  { id: "29", model: "iPhone Plus", storage: "128GB", price: 3900, condition: "pre-owned" },
+  { id: "29", model: "iPhone Plus", storage: "128GB", price: 3900, condition: "pre-owned", image: "/lovable-uploads/8b205e3d-8a67-4959-8213-d0106a2040c9.png" },
   { id: "30", model: "iPhone XR", storage: "64GB", price: 4300, condition: "pre-owned" },
   { id: "31", model: "iPhone XR", storage: "128GB", price: 4900, condition: "pre-owned" },
   { id: "32", model: "iPhone X", storage: "64GB", price: 4100, condition: "pre-owned" },
