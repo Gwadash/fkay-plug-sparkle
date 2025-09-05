@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
-import logo from "@/assets/fkay-logo.png";
 
 const Header = () => {
   const handleWhatsAppClick = () => {
@@ -12,7 +11,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="FkayPlug Logo" className="h-12 w-12" />
+            <img src="/lovable-uploads/e8830936-ee67-45a4-826a-d8f16b50ff86.png" alt="FkayPlug Logo" className="h-12 w-12" />
             <div>
               <h1 className="text-2xl font-bold text-brand-dark">
                 FKAY<span className="text-brand-orange">PLUG</span>
