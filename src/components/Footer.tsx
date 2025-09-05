@@ -37,7 +37,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-brand-orange" />
-                <span>0606104516</span>
+                <span>0602270998</span>
               </div>
               <div className="flex items-center gap-3">
                 <MessageCircle className="h-4 w-4 text-brand-orange" />
