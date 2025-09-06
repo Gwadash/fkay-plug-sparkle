@@ -25,7 +25,7 @@ export const brandNewProducts: Product[] = [
   { id: "15", model: "iPhone 12 Pro", storage: "256GB", price: 9800, condition: "brand-new", image: "/lovable-uploads/5cea7217-dcac-409f-8670-f686f28b2d72.png" },
   { id: "16", model: "iPhone 12 Pro Max", storage: "128GB", price: 11300, condition: "brand-new", image: "/lovable-uploads/bf24c172-ea1d-448f-abae-0fca54aeb346.png" },
   { id: "17", model: "iPhone 13", storage: "128GB", price: 9900, condition: "brand-new", image: "/lovable-uploads/ffbd6bb9-f1bb-49f2-88db-18145465fdd0.png" },
-  { id: "18", model: "iPhone 13 Pro", storage: "128GB", price: 14500, condition: "brand-new" },
+  { id: "18", model: "iPhone 13 Pro", storage: "128GB", price: 14500, condition: "brand-new", image: "/lovable-uploads/c3a1f61e-6476-46ff-b5b7-f0dc3cb55c1e.png" },
   { id: "19", model: "iPhone 14", storage: "128GB", price: 12800, condition: "brand-new" },
   { id: "20", model: "iPhone 14 Pro", storage: "256GB", price: 16900, condition: "brand-new" },
   { id: "21", model: "iPhone 14 Pro Max", storage: "128GB", price: 18500, condition: "brand-new" },
@@ -52,6 +52,6 @@ export const preOwnedProducts: Product[] = [
   { id: "39", model: "iPhone 12 Pro", storage: "128GB", price: 8900, condition: "pre-owned", image: "/lovable-uploads/5cea7217-dcac-409f-8670-f686f28b2d72.png" },
   { id: "40", model: "iPhone 12 Pro Max", storage: "128GB", price: 10600, condition: "pre-owned", image: "/lovable-uploads/bf24c172-ea1d-448f-abae-0fca54aeb346.png" },
   { id: "41", model: "iPhone 13", storage: "128GB", price: 9000, condition: "pre-owned", image: "/lovable-uploads/ffbd6bb9-f1bb-49f2-88db-18145465fdd0.png" },
-  { id: "42", model: "iPhone 13 Pro", storage: "128GB", price: 12200, condition: "pre-owned" },
+  { id: "42", model: "iPhone 13 Pro", storage: "128GB", price: 12200, condition: "pre-owned", image: "/lovable-uploads/c3a1f61e-6476-46ff-b5b7-f0dc3cb55c1e.png" },
   { id: "43", model: "iPhone 13 Pro Max", storage: "128GB", price: 13900, condition: "pre-owned" },
 ];
