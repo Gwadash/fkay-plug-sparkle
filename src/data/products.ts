@@ -29,7 +29,7 @@ export const brandNewProducts: Product[] = [
   { id: "19", model: "iPhone 14", storage: "128GB", price: 12800, condition: "brand-new", image: "/lovable-uploads/15778401-8141-4ff2-a54a-6b6073be207b.png" },
   { id: "20", model: "iPhone 14 Pro", storage: "256GB", price: 16900, condition: "brand-new", image: "/lovable-uploads/a10b91da-93d8-4ba5-b455-98e50878cc47.png" },
   { id: "21", model: "iPhone 14 Pro Max", storage: "128GB", price: 18500, condition: "brand-new", image: "/lovable-uploads/91426426-f886-473c-bdfd-4226031b0d81.png" },
-  { id: "22", model: "iPhone 15", storage: "128GB", price: 14900, condition: "brand-new" },
+  { id: "22", model: "iPhone 15", storage: "128GB", price: 14900, condition: "brand-new", image: "/lovable-uploads/96896a74-8c69-41ae-8ee8-3fc7f5fb38f1.png" },
   { id: "23", model: "iPhone 15 Pro Max", storage: "256GB", price: 24000, condition: "brand-new" },
 ];
 
