@@ -53,5 +53,5 @@ export const preOwnedProducts: Product[] = [
   { id: "40", model: "iPhone 12 Pro Max", storage: "128GB", price: 10600, condition: "pre-owned", image: "/lovable-uploads/bf24c172-ea1d-448f-abae-0fca54aeb346.png" },
   { id: "41", model: "iPhone 13", storage: "128GB", price: 9000, condition: "pre-owned", image: "/lovable-uploads/ffbd6bb9-f1bb-49f2-88db-18145465fdd0.png" },
   { id: "42", model: "iPhone 13 Pro", storage: "128GB", price: 12200, condition: "pre-owned", image: "/lovable-uploads/c3a1f61e-6476-46ff-b5b7-f0dc3cb55c1e.png" },
-  { id: "43", model: "iPhone 13 Pro Max", storage: "128GB", price: 13900, condition: "pre-owned" },
+  { id: "43", model: "iPhone 13 Pro Max", storage: "128GB", price: 13900, condition: "pre-owned", image: "/lovable-uploads/ec9254ca-da70-4e44-8a3c-74c474e36ddd.png" },
 ];
