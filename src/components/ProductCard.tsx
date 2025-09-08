@@ -18,7 +18,7 @@ const ProductCard = ({ model, storage, price, condition, image }: ProductCardPro
   };
 
   return (
-    <Card className="bg-white shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-gray-100 w-full md:max-w-xs mx-auto">
+    <Card className="bg-white shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-gray-100 w-full md:max-w-xs mx-auto h-full flex flex-col">
       {image && (
         <div className="h-64 overflow-hidden flex items-center justify-center">
           <img 
@@ -28,7 +28,7 @@ const ProductCard = ({ model, storage, price, condition, image }: ProductCardPro
           />
         </div>
       )}
-      <div className="p-4 md:p-6">
+      <div className="p-4 md:p-6 flex flex-col flex-1">
         <div className="flex justify-between items-start mb-6">
           <Badge 
             className={condition === "brand-new" ? "bg-brand-orange text-white rounded-full px-3 py-1" : "bg-blue-500 text-white rounded-full px-3 py-1"}
@@ -40,7 +40,7 @@ const ProductCard = ({ model, storage, price, condition, image }: ProductCardPro
           </div>
         </div>
         
-        <h3 className="text-2xl font-bold text-gray-900 mb-2">
+        <h3 className="text-2xl font-bold text-gray-900 mb-2 min-h-[4rem] flex items-center">
           {model}
         </h3>
         
@@ -49,7 +49,7 @@ const ProductCard = ({ model, storage, price, condition, image }: ProductCardPro
           <span className="text-sm font-medium">{storage}</span>
         </div>
         
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mt-auto">
           <div>
             <span className="text-2xl md:text-3xl font-bold text-brand-orange">
               R{price.toLocaleString()}
