@@ -18,7 +18,7 @@ const ProductCard = ({ model, storage, price, condition, image }: ProductCardPro
   };
 
   return (
-    <Card className="bg-white shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-gray-100 w-full max-w-xs mx-auto">
+    <Card className="bg-white shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-gray-100 w-full md:max-w-xs mx-auto">
       {image && (
         <div className="h-64 overflow-hidden flex items-center justify-center">
           <img 
@@ -28,7 +28,7 @@ const ProductCard = ({ model, storage, price, condition, image }: ProductCardPro
           />
         </div>
       )}
-      <div className="p-6">
+      <div className="p-4 md:p-6">
         <div className="flex justify-between items-start mb-6">
           <Badge 
             className={condition === "brand-new" ? "bg-brand-orange text-white rounded-full px-3 py-1" : "bg-blue-500 text-white rounded-full px-3 py-1"}
