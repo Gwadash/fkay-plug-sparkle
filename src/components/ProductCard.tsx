@@ -49,16 +49,16 @@ const ProductCard = ({ model, storage, price, condition, image }: ProductCardPro
           <span className="text-sm font-medium">{storage}</span>
         </div>
         
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
           <div>
-            <span className="text-3xl font-bold text-brand-orange">
+            <span className="text-2xl md:text-3xl font-bold text-brand-orange">
               R{price.toLocaleString()}
             </span>
           </div>
           
           <Button 
             onClick={handleWhatsAppOrder}
-            className="bg-brand-orange hover:bg-brand-orange/90 text-white px-6 py-2 rounded-lg transition-all duration-300"
+            className="bg-brand-orange hover:bg-brand-orange/90 text-white px-4 md:px-6 py-2 rounded-lg transition-all duration-300 w-full md:w-auto text-sm md:text-base"
           >
             <MessageCircle className="h-4 w-4 mr-2" />
             Order Now
